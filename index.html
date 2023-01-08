@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Calculator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>Calculator</header>
+    <div id="module">
+      <div class="calculator-grid">
+        <div class="output">
+          <div data-previous-operand class="previous-operand"></div>
+          <div data-current-operand class="current-operand"></div>
+        </div>
+        <button data-all-clear id="ac">AC</button>
+        <button data-delete id="del">DEL</button>
+        <button data-operation>%</button>
+        <button data-operation>÷</button>
+        <button data-number>7</button>
+        <button data-number>8</button>
+        <button data-number>9</button>
+        <button data-operation>*</button>
+        <button data-number>4</button>
+        <button data-number>5</button>
+        <button data-number>6</button>
+        <button data-operation>+</button>
+        <button data-number>1</button>
+        <button data-number>2</button>
+        <button data-number>3</button>
+        <button data-operation>-</button>
+        <button data-number>.</button>
+        <button data-number>0</button>
+        <button data-equals id="equals">=</button>
+      </div>
+    </div>
+    <footer>
+      <br />
+      Created By Ansh Vishnoi
+      <br />
+      <a href="https://www.linkedin.com/in/ansh-vishnoi-9a3648239"
+        >Linkdin<img
+          src="data:image/png;base64,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"
+          alt="My LinkedIn"
+      /></a>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
